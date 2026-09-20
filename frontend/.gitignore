@@ -1,0 +1,26 @@
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.*.local
+
+# C++ executables
+*.exe
+calcux_server
+calcux_server.exe
+
+# Local calculation history
+history.txt
+data/history.txt
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
