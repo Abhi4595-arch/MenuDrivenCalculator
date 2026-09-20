@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { clearHistory, getHistory } from "../api";
+import MobileMenu from "../components/MobileMenu";
 
 function History() {
   const [records, setRecords] = useState([]);
@@ -193,7 +194,7 @@ function History() {
       {/* =====================================================
           NAVBAR
       ====================================================== */}
-
+<MobileMenu />
       <header className="navbar">
         <Link to="/" className="logo">
           <span className="logo-mark">C</span>

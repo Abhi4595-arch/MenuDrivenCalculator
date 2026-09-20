@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { calculateExpression } from "../api";
+import MobileMenu from "../components/MobileMenu";
 
 function ExpressionCalculator() {
   const [expression, setExpression] = useState("");
@@ -73,6 +74,7 @@ setResult(calculatedResult);
   return (
     <div className="app expression-page">
       {/* NAVBAR */}
+      <MobileMenu />
       <header className="navbar">
         <Link to="/" className="logo">
           <span className="logo-mark">C</span>

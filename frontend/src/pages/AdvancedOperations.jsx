@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { calculate, calculateUnary } from "../api";
+import MobileMenu from "../components/MobileMenu";
 
 const OPERATIONS = {
   power: {
@@ -299,6 +300,7 @@ setExpression(
 
   return (
     <div className="app advanced-page">
+      <MobileMenu />
       <header className="navbar">
         <Link to="/" className="logo">
           <span className="logo-mark">C</span>

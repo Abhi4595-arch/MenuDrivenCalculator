@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { calculate, checkHealth } from "../api";
+import MobileMenu from "../components/MobileMenu";
 
 function Home() {
   const [backendOnline, setBackendOnline] = useState(false);
@@ -163,7 +164,7 @@ function Home() {
       {/* =====================================================
           NAVBAR
       ===================================================== */}
-
+<MobileMenu />
       <header className="navbar">
         <Link to="/" className="logo">
           <span className="logo-mark">C</span>

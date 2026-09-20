@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { calculate } from "../api";
+import MobileMenu from "../components/MobileMenu";
 
 function BasicCalculator() {
   const [firstNumber, setFirstNumber] = useState("");
@@ -120,7 +121,7 @@ function BasicCalculator() {
       {/* =====================================================
           NAVBAR
       ===================================================== */}
-
+<MobileMenu />
       <header className="navbar">
         <Link to="/" className="logo">
           <span className="logo-mark">C</span>

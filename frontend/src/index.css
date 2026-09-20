@@ -11921,3 +11921,549 @@ footer span:first-child {
     gap: 16px !important;
   }
 }
+/* =========================================================
+   CALCUX — MOBILE HAMBURGER MENU
+   ========================================================= */
+
+.mobile-header {
+  display: none;
+}
+
+.mobile-menu-overlay {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  /* -------------------------------------------------------
+     MOBILE HEADER
+     ------------------------------------------------------- */
+
+  .mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1100;
+
+  width: calc(100% - 32px);
+  height: 76px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #08090c;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #f4f5f7;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 0.12em;
+  }
+
+  .mobile-logo .logo-mark {
+    width: 28px;
+    height: 28px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(132, 120, 255, 0.5);
+    border-radius: 7px;
+
+    color: #a69cff;
+    font-size: 13px;
+  }
+
+
+  /* -------------------------------------------------------
+     HAMBURGER BUTTON
+     ------------------------------------------------------- */
+
+  .mobile-menu-toggle {
+  position: relative;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 0;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 11px;
+
+  color: #f4f5f7;
+
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.18s ease;
+}
+
+  .mobile-menu-toggle:hover {
+  background: rgba(166, 156, 255, 0.07);
+  border-color: rgba(166, 156, 255, 0.35);
+}
+
+.mobile-menu-toggle:active {
+  transform: scale(0.94);
+}
+
+.mobile-menu-toggle.open {
+  background: rgba(166, 156, 255, 0.08);
+  border-color: rgba(166, 156, 255, 0.40);
+}
+
+ .mobile-menu-toggle span {
+  width: 17px;
+  height: 1px;
+
+  display: block;
+
+  border-radius: 2px;
+
+  background: #f4f5f7;
+
+  transform-origin: center;
+
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s ease,
+    width 0.25s ease;
+}
+
+  /* -------------------------------------------------------
+     HAMBURGER → X
+     ------------------------------------------------------- */
+
+  .mobile-menu-toggle.open span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.open span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE OVERLAY
+     ------------------------------------------------------- */
+
+  .mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 900;
+
+  display: block;
+
+  overflow-y: auto;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(116, 96, 255, 0.09),
+      transparent 32%
+    ),
+    #08090c;
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transform: translateY(-12px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+}
+
+.mobile-menu-inner {
+  width: calc(100% - 32px);
+  max-width: 520px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding: 100px 0 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+  .mobile-menu-overlay.open {
+    .mobile-menu-overlay.open .mobile-menu-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(2) {
+  transition-delay: 0.09s;
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(3) {
+  transition-delay: 0.13s;
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(4) {
+  transition-delay: 0.17s;
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(5) {
+  transition-delay: 0.21s;
+}
+
+.mobile-menu-overlay.open .mobile-menu-link:nth-child(6) {
+  transition-delay: 0.25s;
+}
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+  }
+
+
+  /* -------------------------------------------------------
+     MENU CONTENT
+     ------------------------------------------------------- */
+
+  .mobile-menu-inner {
+    width: calc(100% - 32px);
+    max-width: 520px;
+
+    min-height: 100%;
+
+    margin: 0 auto;
+    padding: 100px 0 28px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* -------------------------------------------------------
+     MENU HEADING
+     ------------------------------------------------------- */
+
+  .mobile-menu-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+    color: rgba(255, 255, 255, 0.38);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+
+  /* -------------------------------------------------------
+     NAVIGATION LINKS
+     ------------------------------------------------------- */
+
+  .mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-link {
+    position: relative;
+
+    min-height: 72px;
+    -webkit-tap-highlight-color: transparent;
+touch-action: manipulation;
+
+    display: grid;
+    grid-template-columns: 34px 1fr 24px;
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+
+    color: rgba(255, 255, 255, 0.55);
+
+    text-decoration: none;
+
+    opacity: 0;
+    transform: translateY(14px);
+
+    transition:
+  color 0.25s ease,
+  padding-left 0.25s ease,
+  opacity 0.35s ease,
+  transform 0.35s ease;
+  }
+
+  .mobile-menu-link:hover,
+  .mobile-menu-link.active {
+    color: #f4f5f7;
+  }
+
+  .mobile-menu-link.active {
+    padding-left: 7px;
+  }
+
+  .mobile-menu-link.active::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 2px;
+    height: 24px;
+
+    border-radius: 2px;
+
+    background: #a69cff;
+  }
+
+
+  /* -------------------------------------------------------
+     LINK NUMBER
+     ------------------------------------------------------- */
+
+  .mobile-menu-number {
+    color: rgba(255, 255, 255, 0.28);
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+  }
+
+  .mobile-menu-link.active .mobile-menu-number {
+    color: #a69cff;
+  }
+
+
+  /* -------------------------------------------------------
+     LINK LABEL
+     ------------------------------------------------------- */
+
+  .mobile-menu-label {
+    font-size: 25px;
+    font-weight: 450;
+
+    letter-spacing: -0.025em;
+  }
+
+
+  /* -------------------------------------------------------
+     LINK ARROW
+     ------------------------------------------------------- */
+
+  .mobile-menu-arrow {
+    color: rgba(255, 255, 255, 0.28);
+
+    font-size: 15px;
+
+    transform: translateX(-2px);
+
+    transition:
+      color 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .mobile-menu-link:hover .mobile-menu-arrow,
+  .mobile-menu-link.active .mobile-menu-arrow {
+    color: #a69cff;
+    transform: translateX(2px);
+  }
+
+
+  /* -------------------------------------------------------
+     MENU FOOTER
+     ------------------------------------------------------- */
+
+  .mobile-menu-footer {
+    margin-top: auto;
+    padding-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    color: rgba(255, 255, 255, 0.28);
+
+    font-size: 8px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+
+  /* -------------------------------------------------------
+     OPEN CALCULATOR BUTTON
+     ------------------------------------------------------- */
+
+  .mobile-menu-action {
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 17px;
+
+    border: 1px solid rgba(166, 156, 255, 0.25);
+    border-radius: 9px;
+
+    background: rgba(166, 156, 255, 0.055);
+
+    color: #f4f5f7;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .mobile-menu-action:hover {
+    background: rgba(166, 156, 255, 0.10);
+    border-color: rgba(166, 156, 255, 0.45);
+  }
+  .mobile-menu-action:active {
+  transform: scale(0.985);
+}
+.mobile-menu-action {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+  .mobile-menu-action span {
+    color: #a69cff;
+    font-size: 16px;
+  }
+
+
+  /* -------------------------------------------------------
+     HIDE DESKTOP NAVBAR ON MOBILE
+     ------------------------------------------------------- */
+
+  .navbar {
+    display: none;
+  }
+
+}
+/* =========================================================
+   CALCUX — SMALL SCREEN RESPONSIVE POLISH
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .mobile-header {
+    width: calc(100% - 24px);
+    height: 70px;
+  }
+
+  .mobile-logo {
+    font-size: 13px;
+  }
+
+  .mobile-logo .logo-mark {
+    width: 26px;
+    height: 26px;
+  }
+
+  .mobile-menu-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .mobile-menu-inner {
+    width: calc(100% - 24px);
+    padding-top: 88px;
+    padding-bottom: 22px;
+  }
+
+  .mobile-menu-heading {
+    font-size: 8px;
+  }
+
+  .mobile-menu-link {
+    min-height: 64px;
+    grid-template-columns: 28px 1fr 20px;
+    gap: 8px;
+  }
+
+  .mobile-menu-label {
+    font-size: 21px;
+  }
+
+  .mobile-menu-number {
+    font-size: 8px;
+  }
+
+  .mobile-menu-arrow {
+    font-size: 13px;
+  }
+
+}
+
+
+@media (min-width: 361px) and (max-width: 430px) {
+
+  .mobile-menu-label {
+    font-size: 23px;
+  }
+
+}
+
+
+@media (min-width: 431px) and (max-width: 600px) {
+
+  .mobile-menu-inner {
+    max-width: 520px;
+  }
+
+  .mobile-menu-label {
+    font-size: 25px;
+  }
+
+}
