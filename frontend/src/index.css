@@ -12467,3 +12467,13 @@ touch-action: manipulation;
   }
 
 }
+/* =========================================================
+   CALCUX — MOBILE MENU VISIBILITY FIX
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .mobile-menu-overlay.open .mobile-menu-link {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
