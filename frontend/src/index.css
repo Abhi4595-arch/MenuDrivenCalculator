@@ -11959,7 +11959,6 @@ footer span:first-child {
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
-
   .mobile-logo {
     display: flex;
     align-items: center;
@@ -12475,5 +12474,14 @@ touch-action: manipulation;
   .mobile-menu-overlay.open .mobile-menu-link {
     opacity: 1 !important;
     transform: translateY(0) !important;
+  }
+}
+/* =========================================================
+   MOBILE FIXED HEADER — CONTENT OFFSET
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .app > .navbar + main {
+    padding-top: 76px;
   }
 }
