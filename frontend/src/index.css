@@ -12485,3 +12485,487 @@ touch-action: manipulation;
     padding-top: 76px;
   }
 }
+
+/* =========================================================
+   CALCUX — ABOUT PAGE
+   RESPONSIVE CENTER ALIGNMENT
+   PC / TABLET / MOBILE
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   DESKTOP
+   --------------------------------------------------------- */
+
+.about-page-content {
+  width: min(1180px, calc(100% - 64px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero */
+
+.about-hero {
+  width: 100%;
+}
+
+.about-hero-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-hero-meta {
+  text-align: center;
+}
+
+/* Introduction */
+
+.about-introduction {
+  align-items: center;
+}
+
+.about-introduction-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-introduction-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Capabilities */
+
+.about-capabilities {
+  width: 100%;
+}
+
+.about-section-heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section-heading p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Architecture */
+
+.about-architecture {
+  align-items: center;
+}
+
+.about-architecture-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-architecture-flow {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Technology */
+
+.about-technology {
+  align-items: center;
+}
+
+.about-technology-heading {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-technology-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Purpose */
+
+.about-purpose {
+  align-items: center;
+}
+
+.about-purpose-copy {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-purpose-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 980px) {
+
+  .about-page-content {
+    width: min(760px, calc(100% - 48px));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero,
+  .about-introduction,
+  .about-capabilities,
+  .about-architecture,
+  .about-technology,
+  .about-purpose {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .about-hero-copy {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero-copy > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero-meta {
+    justify-self: center;
+    text-align: center;
+  }
+
+
+  /* Introduction */
+
+  .about-introduction {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-introduction-copy {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .about-introduction-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-introduction-card {
+    width: 100%;
+    max-width: 700px;
+  }
+
+
+  /* Capabilities */
+
+  .about-section-heading {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+
+
+  /* Architecture */
+
+  .about-architecture {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-architecture-copy {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .about-architecture-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-architecture-flow {
+    width: 100%;
+    max-width: 720px;
+  }
+
+
+  /* Technology */
+
+  .about-technology {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-technology-heading {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .about-technology-list {
+    width: 100%;
+    max-width: 720px;
+  }
+
+
+  /* Purpose */
+
+  .about-purpose {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .about-purpose-copy {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .about-purpose-main p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-purpose-card {
+    width: 100%;
+    max-width: 700px;
+  }
+
+
+  /* Final */
+
+  .about-final {
+    text-align: center;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .about-page-content {
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero,
+  .about-introduction,
+  .about-capabilities,
+  .about-architecture,
+  .about-technology,
+  .about-purpose {
+    text-align: center;
+  }
+
+
+  /* Hero */
+
+  .about-hero {
+    justify-items: center;
+  }
+
+  .about-hero-copy {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .about-hero-copy > p {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero-meta {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  /* Introduction */
+
+  .about-introduction {
+    justify-items: center;
+  }
+
+  .about-introduction-copy {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .about-introduction-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-introduction-card {
+    width: 100%;
+    max-width: 560px;
+  }
+
+
+  /* Capabilities */
+
+  .about-section-heading {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-section-heading p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-capability-grid {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-capability-card {
+    text-align: left;
+  }
+
+
+  /* Architecture */
+
+  .about-architecture {
+    justify-items: center;
+  }
+
+  .about-architecture-copy {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .about-architecture-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-architecture-flow {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* Technology */
+
+  .about-technology {
+    justify-items: center;
+  }
+
+  .about-technology-heading {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .about-technology-list {
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* Purpose */
+
+  .about-purpose {
+    justify-items: center;
+  }
+
+  .about-purpose-copy {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .about-purpose-main p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-purpose-card {
+    width: 100%;
+    max-width: 560px;
+  }
+
+
+  /* Final CTA */
+
+  .about-final {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-final p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-final-actions {
+    justify-content: center;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .about-page-content {
+    width: calc(100% - 24px);
+  }
+
+  .about-hero,
+  .about-introduction,
+  .about-capabilities,
+  .about-architecture,
+  .about-technology,
+  .about-purpose {
+    text-align: center;
+  }
+
+  .about-hero-copy,
+  .about-introduction-copy,
+  .about-architecture-copy,
+  .about-technology-heading,
+  .about-purpose-copy {
+    max-width: 340px;
+  }
+
+  .about-capability-grid,
+  .about-architecture-flow,
+  .about-technology-list {
+    max-width: 340px;
+  }
+
+  .about-introduction-card,
+  .about-purpose-card {
+    max-width: 340px;
+  }
+}
